@@ -7,7 +7,6 @@
 
 #%.html: %.Rmd
 R --slave -e "rmarkdown::render_site()"
-echo "content"
 ls
 #.PHONY: clean
 #clean:
