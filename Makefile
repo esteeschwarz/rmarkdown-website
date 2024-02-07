@@ -1,11 +1,11 @@
 
-HTML_FILES := $(patsubst %.Rmd, %.html ,$(wildcard *.Rmd))
+HTML_FILES := $(patsubst %.md, %.html ,$(wildcard *.md))
 
 all: clean html
 
 html: $(HTML_FILES)
 
-%.html: %.Rmd
+%.html: %.md
 	R --slave -e "rmarkdown::render('$<')"
 
 .PHONY: clean
