@@ -1,5 +1,5 @@
 
-HTML_FILES := $(patsubst %.Rmd, %.html ,$(wildcard *.Rmd))
+HTML_FILES := $(pathsubst %.Rmd, %.html ,$(wildcard *.Rmd))
 
 all: clean html
 
