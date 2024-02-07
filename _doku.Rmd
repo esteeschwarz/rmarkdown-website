@@ -5,10 +5,12 @@ output:
     df_print: paged
     toc: true
     number_sections: true
+    selfcontained: no
   html_notebook:
     df_print: paged
     toc: true
     number_sections: true
+    selfcontained: no
 navbar:
   title: topic 6
   left:
